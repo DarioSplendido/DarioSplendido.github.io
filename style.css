@@ -1,1 +1,135 @@
 /* style for Home page */
+
+/* Grid & @media*/
+
+@media (min-width: 550px) { 
+
+	#main > div { margin:2em 0 4em; }
+	
+	section.home  { 
+  /*  background:white; */
+		display: grid;
+		grid-template-columns: repeat(12, [col] 1fr);
+		grid-template-rows: auto;
+		grid-column-gap: 0.625em;  
+		grid-row-gap: 1px;
+		grid-template-areas:
+  	"g1 g1 g1 g1 g2 g2 g2 g2 g3 g3 g3 g3"
+    "g4 g4 g4 g4 g4 g4 g4 g4 g4 g4 g4 g4"
+    "g5 g5 g5 g5 g5 g5 g5 g5 g5 g5 g5 g5"  ;
+
+	}
+		 
+	section.home div:nth-of-type(1) { grid-area: g1; }
+	section.home div:nth-of-type(2) { grid-area: g2; }
+	section.home div:nth-of-type(3) { grid-area: g3; }
+	section.home div:nth-of-type(4) { grid-area: g4; }
+	section.home div:nth-of-type(5) { grid-area: g5; }
+} 
+/*end Grid*/
+
+html,body{
+
+  font-family: Helvetica, Arial, "sans-serif";
+  font-size: 1em;
+  text-align:center;
+  min-width:260px;
+  color: #351F39;
+  background-color: #151515;
+
+}
+
+#main{
+  margin:40px auto 15px auto;
+  padding:15px 0 15px 0;
+  border:0px solid;
+  border-radius:5px;
+  background: #FFF3CA;
+}
+
+#title {
+  font-family: Helvetica, Arial, "sans-serif";
+  font-size: 3.5em;
+  text-shadow: 4px 4px 4px #aaa;
+
+}
+
+h2 {
+  font-family: Helvetica, Arial, "sans-serif";
+  font-size: 1.4em;
+
+}
+
+img {
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+  
+}
+
+#image, #image2, #image3 {
+  /*padding: 2px; */
+  border:5px solid #FFF3CA;
+  border-radius: 6px;
+  background:white;
+}
+
+
+#animation {
+  display: block;
+  margin:20px;
+
+  width:auto;
+  padding: 20px;
+
+  border:5px solid #FFF3CA;
+  border-radius: 6px;
+  background:white;
+
+}
+
+figcaption { 
+  margin:15px;
+  display: block; 
+}
+ul{
+  max-width:800px;
+  margin:0 auto;
+  text-align:left;
+  padding-left: 20px;
+}
+
+li{
+  margin: 6px;
+  list-style-type: circle;
+}
+
+footer, h1, h2 {
+  display: block;
+  margin: auto;
+  padding:15px;
+  border:0px solid;
+  border-radius:10px;
+  background: #FFF3CA;
+
+}
+
+a:link {
+  color: #3333cc;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3333cc; 
+}
+
+a:hover {
+  color: blue; 
+  text-decoration: underline;
+}
+
+a:active {
+  color: #726A95;
+  
+}
