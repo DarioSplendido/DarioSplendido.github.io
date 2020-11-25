@@ -47,12 +47,6 @@ html,body{
   background: #FFF3CA;
 }
 
-#title {
-  font-family: Helvetica, Arial, "sans-serif";
-  font-size: 3.5em;
-  text-shadow: 4px 4px 4px #aaa;
-
-}
 
 h2 {
   font-family: Helvetica, Arial, "sans-serif";
@@ -93,17 +87,7 @@ figcaption {
   margin:15px;
   display: block; 
 }
-ul{
-  max-width:800px;
-  margin:0 auto;
-  text-align:left;
-  padding-left: 20px;
-}
 
-li{
-  margin: 6px;
-  list-style-type: circle;
-}
 
 footer, h1, h2 {
   display: block;
