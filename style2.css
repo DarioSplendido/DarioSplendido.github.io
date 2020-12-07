@@ -1,1 +1,158 @@
 /* style for survey page */
+
+#main > div { margin:2em 1em 4em 1em; }
+
+
+html, body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  text-align:center;
+  min-width:500px;
+  color: #000;
+  background-color: #F6F5F5;
+margin: 0em 0.5em 0em 0.5em;
+}
+
+
+
+#title {
+  color: #555;
+  font-size: 1.3em;
+  padding:10 auto 10 auto;
+}
+
+#main {
+  margin: 30px;
+  padding: 1em;
+  border:0px solid;
+  border-radius:5px;
+  background: #E4F7FF;
+  box-shadow: 4px 4px 14px #aaa;
+}
+
+#description {
+  background: #E4F7FF;
+}
+
+p {
+  background-color: white;
+}
+
+table{
+  width:100%;
+}
+
+.labels {
+  text-align: right;
+  padding: 1em;
+  width: 45%;
+}
+
+.contents {
+  text-align: left;
+  padding: 1em;
+  font-weight: normal;
+
+}
+
+.required:before { content:"*"; }
+
+.asterisk_input:after {
+content:" *"; 
+color: red;
+position: absolute; 
+margin: 0px 0px 0px 0px; 
+font-size: x-large; 
+padding: 2px; }
+
+#name, #email {
+    width: 90%;
+    max-width: 380px;
+}
+
+#number {
+    width: 20%;
+    max-width: 60px;
+}
+
+
+/* slider */
+.slidecontainer {
+  width: 100%;
+    max-width: 400px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 400px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+
+
+
+
+.fulljustify {
+    	text-align:justify;
+    }
+    
+.fulljustify:after {
+        content: "";
+        display: inline-block;
+        width: 80%;	
+
+    }
+    
+#tagline {
+        height: 20px;
+        overflow: hidden;
+        line-height: 20px; /* vert-center */
+        color: red;
+        background-color: #E4F7FF;
+        max-width: 400px;
+    }
+  
+
+small > p {
+          max-width: 400px;
+}
+
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}

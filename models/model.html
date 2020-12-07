@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Welcome!</title>
+		
+		<!-- these script tags load our model viewer -->
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+		
+	</head>
+	<body style="background: black">
+		
+		<!-- This div is the left hand panel, where you might put model thumbnails -->
+		<div style="float: left; width: 20%; background: rgb(150, 150, 150); min-height: 1000px">
+			<br><br><br><br><br>
+			
+		</div>
+		
+		<!-- This div is the large main panel of our page -->
+		<div style="float: left; width: 80%; background: rgb(100, 100, 100); min-height: 1000px">
+			<br><br><br><br>
+
+			<!-- the two divs inside here are used to arrange 3D models within the "main panel" div -->
+			
+			<div style="float: left; padding: 50px;">
+				<model-viewer style="width: 500px; height: 500px" camera-controls skybox-image="/images/wide_street_01_1k.hdr" alt="" src="/models/DamagedHelmet/glTF-Embedded/DamagedHelmet.gltf"></model-viewer>
+			</div>
+			
+			<div style="float: left; padding: 50px">
+				<model-viewer style="width: 500px; height: 500px" camera-controls skybox-image="/images/wide_street_01_1k.hdr" alt="" src="/models/FlightHelmet/glTF/FlightHelmet.gltf"></model-viewer>
+			</div>
+				
+		</div>
+
+		<!-- This iframe is the header pane at the top of the page, it's fixed in place and will not scroll off screen -->
+		<!-- its content comes from header.html -->
+		<iframe scrolling="no", src="../header.html" style="position: fixed; left: 0; top: 0; width: 100%; background: rgb(200, 200, 200); height: 4rem; border-width: 0"></iframe>
+		
+		<!-- This div is the footer pane at the top of the page, it's fixed in place and will not scroll off screen -->
+		<div style="position: fixed; left: 0; bottom: 0; background: rgb(200, 200, 200); height: 2rem; width: 100%">
+			
+		</div>
+		
+	</body>
+</html>
+

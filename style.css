@@ -2,12 +2,11 @@
 
 /* Grid & @media*/
 
-@media (min-width: 550px) { 
+@media (min-width: 400px) { 
 
 	#main > div { margin:2em 0 4em; }
 	
 	section.home  { 
-  /*  background:white; */
 		display: grid;
 		grid-template-columns: repeat(12, [col] 1fr);
 		grid-template-rows: auto;
@@ -19,12 +18,13 @@
     "g5 g5 g5 g5 g5 g5 g5 g5 g5 g5 g5 g5"  ;
 
 	}
-		 
+	
 	section.home div:nth-of-type(1) { grid-area: g1; }
 	section.home div:nth-of-type(2) { grid-area: g2; }
 	section.home div:nth-of-type(3) { grid-area: g3; }
 	section.home div:nth-of-type(4) { grid-area: g4; }
 	section.home div:nth-of-type(5) { grid-area: g5; }
+
 } 
 /*end Grid*/
 
@@ -33,20 +33,38 @@ html,body{
   font-family: Helvetica, Arial, "sans-serif";
   font-size: 1em;
   text-align:center;
-  min-width:260px;
+  min-width: 740px;
   color: #351F39;
   background-color: #151515;
+  min-width: 740px;
 
 }
 
 #main{
-  margin:40px auto 15px auto;
+  margin:80px auto 15px auto;
   padding:15px 0 15px 0;
   border:0px solid;
   border-radius:5px;
   background: #FFF3CA;
+
+	
 }
 
+
+#menu {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  top: 0;
+  min-width: 740px;
+
+}
+
+h1 {
+  font-family: Helvetica, Arial, "sans-serif";
+  font-size: 1.5em;
+
+}
 
 h2 {
   font-family: Helvetica, Arial, "sans-serif";
@@ -70,18 +88,6 @@ img {
 }
 
 
-#animation {
-  display: block;
-  margin:20px;
-
-  width:auto;
-  padding: 20px;
-
-  border:5px solid #FFF3CA;
-  border-radius: 6px;
-  background:white;
-
-}
 
 figcaption { 
   margin:15px;
@@ -117,3 +123,5 @@ a:active {
   color: #726A95;
   
 }
+
+
